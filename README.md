@@ -22,5 +22,5 @@ Some graphs created in JavaScript with html &lt;canvas> tag
     <p>use "yourGraphName".draw(); to draw graph and "yourGraphName".drawLegend();</p>
   </li>
 </ol>
-
+<hr/>
 see /test for usage
