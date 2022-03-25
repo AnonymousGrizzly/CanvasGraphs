@@ -23,4 +23,4 @@ Some graphs created in JavaScript with html &lt;canvas> tag
   </li>
 </ol>
 <hr/>
-see /test for usage
+see /testing for usage
