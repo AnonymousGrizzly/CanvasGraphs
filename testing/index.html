@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="text/javascript" src="./PointGraph.js" ></script>
+    <script defer type="text/javascript" src="./BarGraph.js"></script>
+    <script defer type="text/javascript" src="./PieChart.js"></script>
+    <script defer type="text/javascript" src="./PageHandler.js"></script>
+    <link rel="stylesheet" type="text/css" href="pages.css"/>
+    <title>Statistics</title>
+</head>
+<body onload="">
+    <nav>
+        <ul id="navbar">
+            <li id="bar" onclick="togglePages('Barchart-cntnr'); "><a href='#BarCharts'>BarCharts</a></li>
+            <li id="pie" onclick="togglePages('Piechart-cntnr'); "><a href='#PieCharts'>PieChart</a></li>
+            <li id="point" onclick="togglePages('PointChart-cntnr');  "><a href='#PointCharts'>PointCharts</a></li>
+        </ul>
+    </nav>
+    <div id="Barchart-cntnr">
+        <h1>Bar charts</h1>
+        <p>Take a look at how much you spent on the site for the last week </p>
+        <canvas id="BarCanvas" ></canvas>
+        <span for='BarCanvas'></span>
+        <button id="AoTBargraphB" onclick="redraw('AoTBargraph'); "><b>AmountOfTime</b></button>
+        <button id="AoTBargraphB" onclick="redraw('Data2Barchart'); "><b>Data2</b></button>
+    </div>
+    <div id="Piechart-cntnr">
+        <h1>Pie charts</h1>
+        <p>Look at the custom pie graph created purely in html canvas tag and javascript </p>
+        <canvas id="PieCanvas"></canvas>
+        <div id="PieLegend" style="margin: 0;"></div>
+        <span for='PieCanvas'></span>
+    </div>
+    <div id="PointChart-cntnr">
+        <h1>Point charts</h1>
+        <p>Take a look at the custom point charts. If you pick more than 20 values, dots and grid Y will disappear. Press buttons at the bottom to change the graph.</p>
+        <canvas id="PointCanvas"></canvas>
+    </div>
+</body>
+</html>
